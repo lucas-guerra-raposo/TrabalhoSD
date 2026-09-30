@@ -22,9 +22,9 @@ https://fpgasoftware.intel.com/eula.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 224 600 240 768)
+	(rect 224 600 240 776)
 	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
-	(text "F[5..0]" (rect 1 113 13 146)(font "Arial" )(vertical))
+	(text "F[5..0]" (rect 0 134 12 167)(font "Arial" )(vertical))
 	(pt 8 0)
 	(drawing
 		(line (pt 12 84)(pt 12 59))
@@ -39,9 +39,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 440 -424 616 -408)
+	(rect 440 -288 616 -272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[0]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[1]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -55,9 +55,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 440 -288 616 -272)
+	(rect 440 -424 616 -408)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[1]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[0]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 440 -152 616 -136)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[2]" (rect 90 0 130 12)(font "Arial" ))
+	(text "hex0[2]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -89,7 +89,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 440 0 616 16)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[3]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[3]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -105,7 +105,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 440 136 616 152)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[4]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[4]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -121,7 +121,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 440 280 616 296)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[5]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[5]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -137,7 +137,7 @@ https://fpgasoftware.intel.com/eula.
 	(output)
 	(rect 440 424 616 440)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "HEX0[6]" (rect 90 0 128 17)(font "Intel Clear" ))
+	(text "hex0[6]" (rect 90 0 126 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -151,8 +151,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 -448 440 -320)
-	(text "HEX0[0]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "385928" (rect 8 107 43 124)(font "Intel Clear" ))
+	(text "U00" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -201,8 +201,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 -312 440 -184)
-	(text "HEX0[1]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "43242442" (rect 8 107 55 124)(font "Intel Clear" ))
+	(text "U01" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst1" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -251,8 +251,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 -176 440 -48)
-	(text "HEX0[2]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "01001010111" (rect 8 107 72 124)(font "Intel Clear" ))
+	(text "U02" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst2" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -301,8 +301,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 -24 440 104)
-	(text "HEX0[3]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
+	(text "U03" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst3" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -351,8 +351,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 112 440 240)
-	(text "HEX0[4]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "inst5" (rect 8 107 30 124)(font "Intel Clear" ))
+	(text "U04" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst4" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -401,8 +401,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 256 440 384)
-	(text "HEX0[5]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "inst6" (rect 8 107 30 124)(font "Intel Clear" ))
+	(text "U05" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst5" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -451,8 +451,8 @@ https://fpgasoftware.intel.com/eula.
 )
 (symbol
 	(rect 344 400 440 528)
-	(text "HEX0[6]" (rect 5 0 55 19)(font "Intel Clear" (font_size 8)))
-	(text "inst7" (rect 8 107 30 124)(font "Intel Clear" ))
+	(text "U06" (rect 5 0 30 19)(font "Intel Clear" (font_size 8)))
+	(text "inst6" (rect 8 107 30 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
