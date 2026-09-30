@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 152 32)
 		(output)
-		(text "saida[4..0]" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
-		(text "saida[4..0]" (rect 69 27 131 46)(font "Intel Clear" (font_size 8)))
+		(text "saida[5..0]" (rect 0 0 62 19)(font "Intel Clear" (font_size 8)))
+		(text "saida[5..0]" (rect 69 27 131 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(drawing

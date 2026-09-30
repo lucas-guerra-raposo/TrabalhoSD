@@ -56,9 +56,9 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(output)
-	(rect 960 312 1136 328)
+	(rect 1096 304 1272 320)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "saida[4..0]" (rect 90 0 141 12)(font "Arial" ))
+	(text "saida[5..0]" (rect 90 0 141 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -558,6 +558,38 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(rotate180)
 )
+(symbol
+	(rect 1232 480 1296 528)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 25 54)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
+	)
+)
 (connector
 	(pt -136 432)
 	(pt -136 400)
@@ -909,14 +941,47 @@ https://fpgasoftware.intel.com/eula.
 	(pt 968 416)
 )
 (connector
-	(text "saida[4]" (rect 1136 400 1173 417)(font "Intel Clear" ))
-	(pt 1128 416)
-	(pt 1192 416)
+	(pt 1160 416)
+	(pt 1160 504)
 )
 (connector
-	(text "saida[4..0]" (rect 896 304 944 321)(font "Intel Clear" ))
-	(pt 960 320)
-	(pt 888 320)
+	(pt 1160 504)
+	(pt 1208 504)
+)
+(connector
+	(pt 1128 416)
+	(pt 1160 416)
+)
+(connector
+	(text "saida[4]" (rect 1216 400 1253 417)(font "Intel Clear" ))
+	(pt 1160 416)
+	(pt 1264 416)
+)
+(connector
+	(pt 1208 512)
+	(pt 1232 512)
+)
+(connector
+	(pt 1232 496)
+	(pt 1208 496)
+)
+(connector
+	(pt 1208 496)
+	(pt 1208 504)
+)
+(connector
+	(pt 1208 504)
+	(pt 1208 512)
+)
+(connector
+	(text "saida[5]" (rect 1320 488 1357 505)(font "Intel Clear" ))
+	(pt 1296 504)
+	(pt 1376 504)
+)
+(connector
+	(text "saida[5..0]" (rect 968 296 1016 313)(font "Intel Clear" ))
+	(pt 1096 312)
+	(pt 960 312)
 	(bus)
 )
 (junction (pt -464 384))
@@ -925,3 +990,5 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt -464 264))
 (junction (pt -464 520))
 (junction (pt -464 216))
+(junction (pt 1160 416))
+(junction (pt 1208 504))
